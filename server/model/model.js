@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://127.0.0.1:27017/dineshdb", {})
+mongoose.connect("mongodb+srv://Dinesh:qwertyuioplkjhgfdsa@cluster0.mnxslcl.mongodb.net/dineshdb", {})
     .then(() => {
         console.log('db connected');
     })
@@ -19,7 +19,7 @@ const dbfields = new mongoose.Schema({
         type: Date
     },
     time: {
-        type: String 
+        type: String
     },
     myemail: {
         type: String
